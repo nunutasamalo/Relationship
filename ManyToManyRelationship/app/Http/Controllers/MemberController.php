@@ -20,7 +20,7 @@ class MemberController extends Controller
         //$members= Member::all();
         $members= Member::with('roles')->get();
 
-        dd($members);
+        //dd($members);
 
         return view('members.index',compact('members'));
 

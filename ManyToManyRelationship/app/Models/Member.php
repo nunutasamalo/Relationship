@@ -15,6 +15,6 @@ class Member extends Model
     
     public function roles()
     {
-        return $this->belongsToMany(Member::class, 'member_roles');
+        return $this->belongsToMany(Role::class, 'member_roles');
     }
 }
